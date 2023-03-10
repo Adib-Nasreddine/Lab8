@@ -41,16 +41,16 @@ public class CustomListTest {
         assertFalse(list.hasCity(new City("Edmonton","SK")));
 
     }
-//    @Test
-//    public void deleteCityTest(){
-//        list = MockCityList();
-//        list.add(new City("Edmonton","AB"));
-//        list.add(new City("Vancouver","BC"));
-//        list.add(new City("Toronto","ON"));
-//        int listSize = list.getCount();
-//        list.deleteCity(new City("Edmonton","AB"));
-//        assertEquals(list.getCount(),listSize);
-//    }
+    @Test
+    public void deleteCityTest(){
+        list = MockCityList();
+        list.add(new City("Edmonton","AB"));
+        list.add(new City("Vancouver","BC"));
+        list.add(new City("Toronto","ON"));
+        int listSize = list.getCount();
+        list.deleteCity(new City("Edmonton","AB"));
+        assertEquals(list.getCount(),listSize);
+    }
 //    @Test
 //    public void countCityTest(){
 //        list = MockCityList();
